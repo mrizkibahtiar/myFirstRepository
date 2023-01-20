@@ -20,31 +20,34 @@
 </head>
 
 <body class="bg-[#FAFAFA]">
-    <header class="container mx-auto px-5 py-3 flex lg:px-10 lg:py-5 justify-between align-center">
+    <header class="container mx-auto px-5 py-3 flex lg:px-10 lg:py-5 justify-between items-center fixed">
             <div>
-                <img src="assets/img/logo.png" alt="rentind academy">
+                <img src="assets/img/logo.png" alt="rentind academy" width="85px">
             </div>
             <div class="hidden lg:block bg-white px-3 py-2 rounded-md">
                 <select name="" id="">
                     <option value="">All Categories</option>
                 </select>
-                <input type="text" placeholder="Try typing 'spinach'" class="outline-none border-l-4 border-gray-200 border-[#E6E6E6]">
+                <input type="text" placeholder="Try typing 'spinach'" class="outline-none border-l-2 border-[#E6E6E6] pl-3">
                 <i class='bx bx-search'></i>
             </div>
             <nav>
-            <div class="hidden lg:block">
-                <ul class="flex gap-x-8">
+            <div class="absolute top-[-1000%] left-[50%] translate-x-[-50%] text-center shadow-md w-4/5 p-5 rounded-2xl transition duration-300 ease-in-out md:static md:text-left md:shadow-none md:w-fit md:p-0 md:ml-auto md:translate-x-0" id="nav-menu">
+                <ul class="flex gap-x-8 flex-col gap-y-4 md:flex-row">
                     <li><a href="#">Explore</a></li>
                     <li><a href="">Rents</a></li>
                     <li><a href="#">Sales</a></li>
                     <li><a href="#">How it Work</a></li>
-                    <li class="bg-gray-200 px-2 py-1 rounded-full"><a href="#">Contact Us</a></li>
+                    <li class="bg-gray-200 px-5 py-2 rounded-full"><a href="#">Contact Us</a></li>
                 </ul>
             </div>
-            <div class="hover:cursor-pointer lg:hidden">
+            <div class="hover:cursor-pointer lg:hidden" id="nav-toggle">
                 <i class='bx bx-menu text-lg'></i>
             </div>
         </nav>
     </header>
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
